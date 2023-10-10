@@ -4,12 +4,20 @@ import { styles } from "./MovieDetailScreen.styles";
 
 export default function MovieDetailScreen({ route }) {
   // TODO: Recieve the movieItem by destructuring route params.
+  const { movie } = route.params;
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         {/* TODO: Configure this screen to have an image and appropriate text describing the movie. 
                 See the example on the spec for design inspiration.
                 Feel free to use the styles below. */}
+        <Image source={{ uri: movie.posterurl }} style={styles.movieImage} />
+        <Text style={styles.h1}>{movie.title}</Text>
+        <Text style={styles.h2}>Released {movie.year}</Text>
+        <Text style={styles.h3}>{movie.genres.join(", ")}</Text>
+        <Text style={styles.h3}>{movie.actors.join(", ")}</Text>
+        <Text style={styles.h4}>{movie.storyline}</Text>
       </ScrollView>
     </SafeAreaView>
   );

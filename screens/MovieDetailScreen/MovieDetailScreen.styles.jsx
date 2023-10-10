@@ -7,14 +7,14 @@ export const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
   },
   h1: {
-    fontFamily: "Avenir",
+    fontFamily: "Avenir-Medium",
     fontSize: 30,
     fontWeight: "700",
     textAlign: "center",
     marginTop: 20,
   },
   h2: {
-    fontFamily: "Avenir",
+    fontFamily: "Avenir-Light",
     fontSize: 18,
     fontWeight: "300",
     color: "gray",
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   h3: {
-    fontFamily: "Avenir",
+    fontFamily: "Avenir-Light",
     fontSize: 18,
     fontWeight: "300",
     color: "gray",
@@ -30,10 +30,17 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   h4: {
-    fontFamily: "Avenir",
+    fontFamily: "Avenir-Light",
     fontSize: 18,
     fontWeight: "300",
     marginTop: 20,
     textAlign: "center",
+  },
+  movieImage: {
+    width: "50%",
+    height: "50%",
+    resizeMode: "cover",
+    marginBottom: 20,
+    alignSelf: "center",
   },
 });

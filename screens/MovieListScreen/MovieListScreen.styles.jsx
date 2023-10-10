@@ -22,14 +22,29 @@ export const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
   },
-  movieCellTitle: { fontFamily: "Avenir", fontSize: 22 },
-  movieCellSubtitle: { fontFamily: "Avenir", fontSize: 14 },
-  movieCellLeft: { height: 80, width: 54 },
-  movieCellImage: { height: 80, width: 54, resizeMode: "contain" },
+  movieCellTitle: {
+    fontFamily: "Avenir-Medium",
+    fontSize: 20,
+    marginBottom: 8,
+  },
+  movieCellSubtitle: {
+    fontFamily: "Avenir-Light",
+    fontSize: 14,
+    color: "#888",
+  },
+  movieCellLeft: {
+    height: 100,
+    width: 70,
+  },
+  movieCellImage: {
+    height: "100%",
+    width: "100%",
+    resizeMode: "cover",
+    borderRadius: 10,
+  },
   movieCellRight: {
     flex: 1,
-    marginLeft: 20,
+    marginLeft: 16,
     justifyContent: "center",
-    alignItems: "baseline",
   },
 });
